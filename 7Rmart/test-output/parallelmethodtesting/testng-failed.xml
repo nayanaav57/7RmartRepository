@@ -9,6 +9,7 @@
     <classes>
       <class name="testscript.LoginTest">
         <methods>
+          <include name="verifyTheUserUnableToLoginUsingInvalidUsernameAndPassword"/>
           <include name="initializebrowser"/>
           <include name="browserQuit"/>
           <include name="verifyTheUserUnableToLoginUsingInvalidPassword"/>

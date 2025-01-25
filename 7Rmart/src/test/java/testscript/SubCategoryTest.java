@@ -3,34 +3,39 @@ package testscript;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constants.Constants;
+import pages.HomePage;
 import pages.LoginPage;
 import pages.SubCategoryPage;
 import utilities.ExcelUtilities;
 import utilities.FakerUtility;
 
-public class SubCategoryTest extends Base{
-	@Test(description="test case to verify if subcategory details can be added in subcategory page")
+public class SubCategoryTest extends Base {
+	
+	HomePage homepage;
+	SubCategoryPage subcategory;
+	
+	@Test(description = "test case to verify if subcategory details can be added in subcategory page")
 	public void verifyToAddSubCategoryDetailsInSubCategoryPage() throws Exception {
-		
-		String username =ExcelUtilities.readString(1, 0, "LoginPage");
-		String password =ExcelUtilities.readString(1, 1, "LoginPage");
-		LoginPage loginpage=new LoginPage(driver);
-		loginpage.enterUserName(username);
-		loginpage.enterPassWord(password);
-		loginpage.submitClick();
-		
-		SubCategoryPage subcategory=new SubCategoryPage(driver);
-		subcategory.clickMoreInfo();
-		subcategory.clickNewButton();
+
+		String username = ExcelUtilities.readString(1, 0, "LoginPage");
+		String password = ExcelUtilities.readString(1, 1, "LoginPage");
+		LoginPage loginpage = new LoginPage(driver);
+		loginpage.enterUserName(username).enterPassWord(password);
+		//loginpage.enterPassWord(password);
+		homepage=loginpage.submitClick();
+
+		//SubCategoryPage subcategory = new SubCategoryPage(driver);
+		FakerUtility fakerutility = new FakerUtility();
+		String value = fakerutility.generateName();
+		subcategory=homepage.clickMoreInfoButtonForSubCategoryPage().clickNewButton().selectDropDown().enterSubcategory(value).fileUpload().clickSaveButton();
+		/*subcategory.clickNewButton();
 		subcategory.selectDropDown();
-		//String value =ExcelUtilities.readString(3, 0, "SubCategoryPage");
-		FakerUtility fakerutility=new FakerUtility();
-		String value=fakerutility.generateName();
 		subcategory.enterSubcategory(value);
 		subcategory.fileUpload();
-		subcategory.clickSaveButton();
-		boolean alertshown=subcategory.isAlertMessageDisplayed();
-		Assert.assertTrue(alertshown,"failed to add details in subcategory page");
+		subcategory.clickSaveButton();*/
+		boolean alertshown = subcategory.isAlertMessageDisplayed();
+		Assert.assertTrue(alertshown, Constants.ALERTMESSAGE4);
 	}
 
 }

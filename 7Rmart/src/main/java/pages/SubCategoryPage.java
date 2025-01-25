@@ -10,51 +10,63 @@ import constants.Constants;
 import utilities.FileUploadUtility;
 
 public class SubCategoryPage {
-	WebDriver driver; 
- 	public SubCategoryPage(WebDriver driver) //parameterized constructor
- 	{ 
- 		this.driver=driver; 
- 		PageFactory.initElements(driver , this); //to initialize webElements
- 		 
- 	} 
- 	
- 	
- 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-sub-category']//following-sibling::i[@class='fas fa-arrow-circle-right']")private WebElement moreinfobutton;
- 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")private WebElement newbutton;
- 	@FindBy(xpath="//select[@class='form-control selectpicker']")private WebElement dropdown;
- 	@FindBy(xpath="//input[@id='subcategory']")private WebElement entersubcategory;
- 	@FindBy(xpath="//input[@id='main_img']")private WebElement choosefile;
- 	@FindBy(xpath="//button[@class='btn btn-danger']")private WebElement savebutton;
- 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")private WebElement alert;
- 	
- 	public void clickMoreInfo() {
-		moreinfobutton.click();	
+	WebDriver driver;
+
+	public SubCategoryPage(WebDriver driver) // parameterized constructor
+	{
+		this.driver = driver;
+		PageFactory.initElements(driver, this); // to initialize webElements
+
 	}
- 	public void clickNewButton() {
-		newbutton.click();	
+
+	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-sub-category']//following-sibling::i[@class='fas fa-arrow-circle-right']")
+	private WebElement moreinfobutton;
+	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
+	private WebElement newbutton;
+	@FindBy(xpath = "//select[@class='form-control selectpicker']")
+	private WebElement dropdown;
+	@FindBy(xpath = "//input[@id='subcategory']")
+	private WebElement entersubcategory;
+	@FindBy(xpath = "//input[@id='main_img']")
+	private WebElement choosefile;
+	@FindBy(xpath = "//button[@class='btn btn-danger']")
+	private WebElement savebutton;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	private WebElement alert;
+
+	
+
+	public SubCategoryPage clickNewButton() {
+		newbutton.click();
+		return this;
 	}
- 	
- 	public void selectDropDown() {
- 		
- 		Select text=new Select(dropdown);
- 		text.selectByVisibleText("pen");
- 	}
- 	
- 	public void enterSubcategory(String subcategory) {
- 		entersubcategory.sendKeys(subcategory);
+
+	public SubCategoryPage selectDropDown() {
+
+		Select text = new Select(dropdown);
+		text.selectByVisibleText("pen");
+		return this;
 	}
- 	
- 	public void fileUpload() {
- 		
- 		FileUploadUtility fileupload= new FileUploadUtility();
- 		fileupload.fileUploadUsingSendKeys(choosefile,Constants.PENIMAGE);
- 		//choosefile.sendKeys("C:\\Users\\nayan\\Downloads\\pen.jpg");
+
+	public SubCategoryPage enterSubcategory(String subcategory) {
+		entersubcategory.sendKeys(subcategory);
+		return this;
 	}
- 	public void clickSaveButton() {
-		savebutton.click();	
+
+	public SubCategoryPage fileUpload() {
+
+		FileUploadUtility fileupload = new FileUploadUtility();
+		fileupload.fileUploadUsingSendKeys(choosefile, Constants.PENIMAGE);
+		return this;
+		// choosefile.sendKeys("C:\\Users\\nayan\\Downloads\\pen.jpg");
 	}
- 	
- 	public boolean isAlertMessageDisplayed() {
- 		return alert.isDisplayed();
- 	}
+
+	public SubCategoryPage clickSaveButton() {
+		savebutton.click();
+		return this;
+	}
+
+	public boolean isAlertMessageDisplayed() {
+		return alert.isDisplayed();
+	}
 }

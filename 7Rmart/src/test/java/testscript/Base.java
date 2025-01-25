@@ -68,8 +68,7 @@ public class Base {
 		if (iTestResult.getStatus() == ITestResult.FAILURE) // status of test case is checked here
 		{
 			scrshot = new ScreenshotUtility();// creating object
-			scrshot.getScreenShot(driver, iTestResult.getName());// calling method using the object if test case fail
-																	// pass driver and name of failed test case
+			scrshot.getScreenShot(driver, iTestResult.getName());// calling method using the object if test case fail, pass driver and name of failed test case																
 		}
 
 		driver.quit();

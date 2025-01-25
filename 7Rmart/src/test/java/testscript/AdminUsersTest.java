@@ -55,6 +55,6 @@ public class AdminUsersTest extends Base {
 		adminuser=homepage.clickMoreInfoButtonForAdminUsersPage().clickDeleteButton();
 		//adminuser.clickDeleteButton();
 		boolean alertshown = adminuser.isAlertMessageDisplayed();
-		Assert.assertTrue(alertshown, "failed to delete user from the admin users page");
+		Assert.assertTrue(alertshown, Constants.ALERTSHOWNMESSAGE2);
 	}
 }

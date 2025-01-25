@@ -45,8 +45,6 @@ public class AdminUsersPage {
 	@FindBy(xpath = "(((//tbody//descendant::tr)[1]//td)[5]//a[@class='btn btn-sm btn btn-danger btncss'])")
 	private WebElement deletebutton;
 
-	
-
 	public AdminUsersPage clickNewButton() {
 
 		newbutton.click();

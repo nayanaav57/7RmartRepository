@@ -11,8 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class PageUtility {
 
-	public void javaSriptClick(WebDriver driver, WebElement element) {// java script click is used if normal click does
-																		// not work
+	public void javaSriptClick(WebDriver driver, WebElement element) {// java script click is used if normal click does not work																	
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
 	}

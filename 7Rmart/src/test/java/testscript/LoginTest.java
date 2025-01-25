@@ -22,8 +22,8 @@ public class LoginTest extends Base {
 	// }
 	@Test(description = "test case to verfiy if user can login using valid credentials", groups = { "regression" })
 	// (dataProvider="credentials")
-	public void verifyTheUserIsAbleToLoginUsingValidCredentials() throws Exception { // String username,//String
-																						// password)
+	public void verifyTheUserIsAbleToLoginUsingValidCredentials() throws Exception { //(// String username,//String password)
+																						
 
 		String username = ExcelUtilities.readString(1, 0, "LoginPage");// for username
 		String password = ExcelUtilities.readString(1, 1, "LoginPage");// for password

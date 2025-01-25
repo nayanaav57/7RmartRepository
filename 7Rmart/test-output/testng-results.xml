@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-24T21:59:01 IST" name="parallelclasstesting" finished-at="2025-01-24T21:59:35 IST" duration-ms="33887">
+  <suite started-at="2025-01-25T22:05:34 IST" name="Suite" finished-at="2025-01-25T22:06:10 IST" duration-ms="35542">
     <groups>
     </groups>
-    <test started-at="2025-01-24T21:59:01 IST" name="chrometest" finished-at="2025-01-24T21:59:35 IST" duration-ms="33887">
+    <test started-at="2025-01-25T22:05:34 IST" name="Test" finished-at="2025-01-25T22:06:10 IST" duration-ms="35542">
       <class name="testscript.ManageNewsTest">
-        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@1500b2f3]" started-at="2025-01-24T21:59:01 IST" name="initializebrowser" finished-at="2025-01-24T21:59:27 IST" duration-ms="26598" status="PASS">
+        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@1500b2f3]" started-at="2025-01-25T22:06:02 IST" name="initializebrowser" finished-at="2025-01-25T22:06:05 IST" duration-ms="2999" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="verifyToCreateNewsInManageNewsPage()[pri:0, instance:testscript.ManageNewsTest@1500b2f3]" started-at="2025-01-24T21:59:27 IST" name="verifyToCreateNewsInManageNewsPage" description="test case to verify if a news can be created in manage news page" finished-at="2025-01-24T21:59:33 IST" duration-ms="5346" status="PASS">
+        <test-method signature="verifyToCreateNewsInManageNewsPage()[pri:0, instance:testscript.ManageNewsTest@1500b2f3]" started-at="2025-01-25T22:06:05 IST" name="verifyToCreateNewsInManageNewsPage" description="test case to verify if a news can be created in manage news page" finished-at="2025-01-25T22:06:10 IST" duration-ms="4368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToCreateNewsInManageNewsPage -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@1500b2f3]" started-at="2025-01-24T21:59:33 IST" name="browserQuit" finished-at="2025-01-24T21:59:35 IST" duration-ms="1894" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@1500b2f3]" started-at="2025-01-25T22:06:10 IST" name="browserQuit" finished-at="2025-01-25T22:06:10 IST" duration-ms="202" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,7 +35,7 @@
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.ManageNewsTest -->
       <class name="testscript.AdminUsersTest">
-        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-24T21:59:01 IST" name="initializebrowser" finished-at="2025-01-24T21:59:06 IST" duration-ms="4926" status="PASS">
+        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-25T22:05:34 IST" name="initializebrowser" finished-at="2025-01-25T22:05:48 IST" duration-ms="13044" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,11 +46,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="VerfiyIfAnyUserCanBeDeletedFromTheAdminUsersPage()[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-24T21:59:06 IST" name="VerfiyIfAnyUserCanBeDeletedFromTheAdminUsersPage" description="test case to verfiy if a user can be deleted from admin users page" finished-at="2025-01-24T21:59:11 IST" duration-ms="4769" status="PASS">
+        <test-method signature="VerfiyIfAnyUserCanBeDeletedFromTheAdminUsersPage()[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-25T22:05:48 IST" name="VerfiyIfAnyUserCanBeDeletedFromTheAdminUsersPage" description="test case to verfiy if a user can be deleted from admin users page" finished-at="2025-01-25T22:05:53 IST" duration-ms="5519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerfiyIfAnyUserCanBeDeletedFromTheAdminUsersPage -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-24T21:59:11 IST" name="browserQuit" finished-at="2025-01-24T21:59:11 IST" duration-ms="271" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-25T22:05:53 IST" name="browserQuit" finished-at="2025-01-25T22:05:53 IST" duration-ms="406" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,7 +61,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-24T21:59:11 IST" name="initializebrowser" finished-at="2025-01-24T21:59:15 IST" duration-ms="3842" status="PASS">
+        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-25T22:05:53 IST" name="initializebrowser" finished-at="2025-01-25T22:05:56 IST" duration-ms="2953" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,11 +72,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="verfiyIfNewUserIsCreatedInTheAdminUsersPage()[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-24T21:59:15 IST" name="verfiyIfNewUserIsCreatedInTheAdminUsersPage" description="test case to verfiy if new user can be created in admin users page" finished-at="2025-01-24T21:59:20 IST" duration-ms="5651" status="PASS">
+        <test-method signature="verfiyIfNewUserIsCreatedInTheAdminUsersPage()[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-25T22:05:56 IST" name="verfiyIfNewUserIsCreatedInTheAdminUsersPage" description="test case to verfiy if new user can be created in admin users page" finished-at="2025-01-25T22:06:02 IST" duration-ms="5749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verfiyIfNewUserIsCreatedInTheAdminUsersPage -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-24T21:59:20 IST" name="browserQuit" finished-at="2025-01-24T21:59:21 IST" duration-ms="274" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@69c81773]" started-at="2025-01-25T22:06:02 IST" name="browserQuit" finished-at="2025-01-25T22:06:02 IST" duration-ms="214" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,6 +88,6 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.AdminUsersTest -->
-    </test> <!-- chrometest -->
-  </suite> <!-- parallelclasstesting -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

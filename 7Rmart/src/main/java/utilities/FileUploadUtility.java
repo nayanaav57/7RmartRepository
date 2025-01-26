@@ -15,7 +15,7 @@ public class FileUploadUtility {
 
 	}
 
-	public void fileuploadUsingRobertClass(WebElement element, String path) throws AWTException {
+	public void fileUploadUsingRobertClass(WebElement element, String path) throws AWTException {
 
 		StringSelection ss = new StringSelection(path);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
